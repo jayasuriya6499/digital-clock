@@ -1,0 +1,124 @@
+        
+var date= document.getElementById("date");
+var month= document.getElementById("month");
+var year= document.getElementById("year");
+var hour= document.getElementById("hour");
+var minute= document.getElementById("minute");
+var second= document.getElementById("second");
+var week0= document.getElementById("week0");
+var week1= document.getElementById("week1");
+var week2= document.getElementById("week2");
+var week3= document.getElementById("week3");
+var week4= document.getElementById("week4");
+var week5= document.getElementById("week5");
+var week6= document.getElementById("week6");
+var am= document.getElementById("am");
+var pm= document.getElementById("pm");
+
+
+
+  function Time(){
+	 
+	 const todayDate = new Date();
+	       ///get date
+	 let date1 = todayDate.getDate();
+	 if(date1<10){
+		 date.innerText="0"+date1;
+	 }
+	 else{
+		 date.innerText=date1;
+	 }
+	       ///get month
+	 let month1 = 1+todayDate.getMonth();
+	 if(month1<10){
+		 month.innerText="0"+month1;
+	 }
+	 else{
+		 month.innerText=month1;
+	 }
+	 
+	        ///get year
+	 let year1= todayDate.getFullYear();
+	 year.innerText=year1;
+	 
+	 
+	       ///get hour
+	let hour1= todayDate.getHours();
+	if(hour1<10){
+		hour.innerText="0"+hour1;
+	}
+	else{
+		 hour.innerText=hour1;
+	 }
+	
+	         ///get minute
+	let minute1= todayDate.getMinutes();
+	if(minute1<10){
+		minute.innerText="0"+minute1;
+	}
+	else{
+		 minute.innerText=minute1;
+	}
+	           
+			 ///get second
+	let sec1= todayDate.getSeconds();
+	if(sec1<10){
+		second.innerText="0"+sec1;
+	}
+	else{
+		 second.innerText=sec1;
+	 }
+	 
+	
+	   ///am,pm
+	let session= todayDate.getHours();
+	if(session>=12){
+		pm.checked=true;
+	}
+	else{
+		am.checked=true;
+	}
+	
+	
+	
+	   ////get weekdays
+	   
+	   let days= todayDate.getDay();
+	   switch(days){
+		   case 0:
+		      week0.checked=true;
+			  break;
+		   case 1:
+		      week1.checked=true;
+			  break;
+		   case 2:
+		      week2.checked=true;
+			  break;
+		   case 3:
+		      week3.checked=true;
+			  break;
+		   case 4:
+		      week4.checked=true;
+			  break;
+		   case 5:
+		      week5.checked=true;
+			  break;
+		   case 6:
+		      week6.checked=true;
+			  break;
+			  
+	   }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+}
+var todayDate= Time();
+setInterval(Time,1000);

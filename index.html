@@ -1,0 +1,121 @@
+<!Doctype html>
+<html>
+<head>
+    <title> Digital Clock </title>
+	    <!---- meta link ------>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+	    <!----- bootstrap link ---->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	    <!---- css link ----->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <section class="digital-clock">
+	    <div class="digital-content border border-white w-50">
+		
+		       <!---- DATE-MONTH-YEAR --->
+		   <div class="dmy">
+		       <div class="dmy-content d-flex justify-content-center pt-3">
+			       <p class="ms-4 me-4">DATE</p>
+				   <p class="ms-4 me-4">MONTH</p>
+				   <p class="ms-4 me-4">YEAR</p>
+			   </div>
+			   <div class="d-flex m-auto dmy-num border border-white">
+			      <p class="text-danger" id="date"></p>
+				  <p class="text-danger" id="month"></p>
+				  <p class="text-danger" id="year"></p>
+			   </div>
+		   </div>
+		   
+		        <!---- HOUR-MINUTE-SECOND --->
+		   <div class="hms">
+		   
+		      <div class="hms-content d-flex justify-content-center pt-3">
+			     <p class="ms-4 me-4">HOUR</p>
+				 <p class="ms-4 me-4">MINUTE</p>
+				 <p class="ms-4 me-4">SECOND</p>
+			  </div>
+			  <div class="d-flex m-auto hms-num border border-white">
+			     <p class="text-danger" id="hour"></p>
+				 <p class="text-danger" id="minute"></p>
+				 <p class="text-danger" id="second"></p>
+			  </div>
+			  
+			      <!---- WEEK-DAYS --->
+			  <div class="week-days d-flex justify-content-center m-4">
+			     <div class="day1 ps-2 pe-2">
+				    <input type="radio" id="week0" name="date">
+				    <label class="text-white fs-6"> SUN </label>
+				 </div>
+				 
+				 <div class="day2 ps-2 pe-2">
+				    <input type="radio" id="week1" name="date">
+				    <label class="text-white fs-6"> MON </label>
+				 </div>
+				 
+				 <div class="day3 ps-2 pe-2">
+				    <input type="radio" id="week2" name="date">
+				    <label class="text-white fs-6"> TUE </label>
+				 </div>
+				 
+				 <div class="day4 ps-2 pe-2">
+				    <input type="radio" id="week3" name="date">
+				    <label class="text-white fs-6"> WED </label>
+				 </div>
+				 
+				 <div class="day5 ps-2 pe-2">
+				    <input type="radio" id="week4" name="date">
+				    <label class="text-white fs-6"> THU </label>
+				 </div>
+				 
+				 <div class="day6 ps-2 pe-2">
+				    <input type="radio" id="week5" name="date">
+				    <label class="text-white fs-6"> FRI </label>
+				 </div>
+				 
+				 <div class="day7 ps-2 pe-2">
+				    <input type="radio" id="week6" name="date">
+				    <label class="text-white fs-6"> SAT </label>
+				 </div>
+			  </div> 
+			  
+		   </div>
+		   
+		   
+		   <div class="session d-flex justify-content-center mb-4">
+		      <div class="afternoon">
+			     <input type="radio" id="am" name="time">
+				 <label class="text-white fs-6"> AM </label>
+			  </div>
+			  <div class="noon">
+			     <input type="radio" id="pm" name="time">
+				 <label class="text-white fs-6"> PM </label>
+			  </div>
+		   </div>
+		   
+		   
+		   
+		   
+		</div>
+	</section>
+     
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+
+<script src="js/script.js"> </script>
+</body>
+</html>

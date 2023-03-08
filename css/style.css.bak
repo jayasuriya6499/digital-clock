@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+.digital-clock{
+	padding:80px 0;
+	background:#000;
+}
+
+.digital-content{
+	margin:0 auto;
+	outline: solid 1px white;
+    outline-offset: -30px;
+	padding:30px 10px;
+	border-width:5px !important;
+	border-radius:5px;
+}
+
+.dmy-content p{
+	color:#fff;
+	font-size:30px;
+	font-weight:bold;
+}
+
+.hms-content p{
+	color:#fff;
+	font-size:30px;
+	font-weight:bold;
+}
+.dmy-num{
+	width: 67%;
+	border-radius:5px;
+}
+.dmy-num p{
+	margin:0 auto;
+	font-size:30px;
+	font-weight:bold;
+	padding:5px 0;
+}
+
+
+.hms-num{
+	width: 67%;
+	border-radius:5px;
+}
+.hms-num p{
+	margin:0 auto;
+	font-size:30px;
+	font-weight:bold;
+	padding:5px 0;
+}
+
+
+
+
+input{
+	width:30px;
+	height:25px;
+	accent-color:#dc3545;
+}
